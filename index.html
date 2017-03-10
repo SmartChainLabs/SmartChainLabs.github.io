@@ -4,20 +4,22 @@
         <meta charset="utf-8">
         <title>SmartChain Labs - Blockchain & Smart Contract</title>
         <meta name="description" content="We provide high quality blockchain solutions and consulting services">
-
         <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Google Fonts -->
-        <link href="http://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,600,700" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Dancing+Script:400,700%7CRaleway:300,300i,400,400i,500,600,700" rel="stylesheet">
 
         <link rel="stylesheet" href="assets/css/plugins.min.css">
+        <link rel="stylesheet" href="assets/css/settings.css">
+        <link rel="stylesheet" href="assets/css/layers.css">
+        <link rel="stylesheet" href="assets/css/navigation.css">
         <link rel="stylesheet" href="assets/css/style.css">
         
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/faviconx57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/faviconx72.png">
+        <link rel="icon" type="image/png" href="assets/images/logo.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="assets/images/icons/logo.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/images/icons/logo.png">
 
         <!-- Modernizr -->
         <script src="assets/js/modernizr.js"></script>
@@ -30,41 +32,867 @@
             </div><!-- End .sk-double-bounce -->
         </div><!-- End #page-loader -->
         
-        <div class="coming-soon overlay-container text-center" style="background-image:url(assets/images/coming-soonbg.jpg)">
-            <div class="overlay light"></div><!-- End .overlay -->
+        <div id="wrapper">
+            <header class="header sticky-header animated-dropdown ttb-dropdown">
+                <div class="header-top">
+                    <div class="container-fluid">
+                        <div class="dropdown header-dropdown pull-right">
+                            <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages</a>
 
-            <div class="container-fluid">
-                <a href="#" class="site-logo" title="SmartChain Labs - Leading Blockchain Innovation">
-                    <img src="assets/images/logo_temp.png" data-rjs="3" alt="Logo">
-                </a>
-                <h1>Coming Soon</h1>
-                <p>SmartChain Labs is a new venture that provides high quality blockchain solutions and consulting services. Please check our website again on Pi Day (14 March) to see more details on our team, our services and our exciting products.</p>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Vietnamese</a></li>
+                            </ul>
+                        </div><!-- End .header-dropdown -->
 
-                <div class="soon-countdown"></div><!-- End .soon-countdown -->
-            </div><!-- End .container-fluid -->
-        </div><!-- End .coming-soon -->
-        
+                        <div class="social-icons hidden-xs pull-left">
+                            <a href="https://twitter.com/SmartChainLabs/" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/SmartChainLabs/" class="social-icon" title="Github"><i class="fa fa-github"></i></a>
+                        </div><!-- End .social-icons -->
+                    </div><!-- End .container-fluid -->
+                </div><!-- End .header-top -->
+
+                <div class="header-inner">
+                    <div class="container-fluid">
+                        <a href="index.html" class="site-logo" title="Smartchain Labs" style="margin-top: 2em;">
+                            <img src="assets/images/logo.png" data-rjs="3" alt="Smartchain Labs logo" style="height: 50px; display: inline-block;">
+                            <span style="margin-bottom: 0px; padding-left: 0.5em; font-size: 1.5em; font-weight: 700; color: #673AB7; vertical-align: middle;">SmartChain Labs</span>
+                            <span class="sr-only">SmartChain Labs</span>
+                        </a>
+
+                        <div class="header-info-boxes">
+                            <div class="header-info-box">
+                                <div class="header-info-icon custom2">
+                                    <i class="fa fa-coffee"></i>
+                                </div><!-- End .header-info-icon -->
+                                <div class="info-box-title">Want to meet?</div>
+                                <p>Coffee is on us when we meet</p>
+                            </div><!-- End .header-info-box -->                            
+
+                            <div class="header-info-box">
+                                <div class="header-info-icon custom2">
+                                    <i class="fa fa-phone"></i>
+                                </div><!-- End .header-info-icon -->
+                                <div class="info-box-title">Call Us</div>
+                                <p>+84 98 5241549</p>
+                            </div><!-- End .header-info-box -->
+                            <div id="contact" class="header-info-box">
+                                <div class="header-info-icon custom2">
+                                    <i class="fa fa-envelope"></i>
+                                </div><!-- End .header-info-icon -->
+                                <div class="info-box-title">Email Us</div>
+                                <p><a href="mailto:contact@smartchainlabs.com">contact@smartchainlabs.com</a></p>
+                            </div><!-- End .header-info-box -->
+                        </div><!-- End header-info-boxes -->
+                    </div><!-- End .container-fluid -->
+                </div><!-- End .header-inner -->
+
+                <div class="header-bottom custom">
+                    <div class="container-fluid">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav-container" aria-expanded="false">
+                            <span class="toggle-text">Menu</span>
+                            <span class="toggle-wrapper">
+                                <span class="sr-only">Toggle Menu</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="main-nav-container">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a href="/" role="button" aria-expanded="false">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#services" role="button" aria-expanded="false">Services</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#" role="button" aria-expanded="false">Our Skills</a>
+                                </li> -->
+                                <li>
+                                    <a href="#projects" role="button" aria-expanded="false">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#team" role="button" aria-expanded="false">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#partners" role="button" aria-expanded="false">Partners</a>
+                                </li>                                
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- End .container-fluid -->
+                </div><!-- End .header-bottom -->
+            </header><!-- End .header -->
+
+            <div class="main">
+                <div id="rev_slider_wrapper" class="slider-container rev_slider_wrapper rev_container_1 fullwidthbanner-container" data-alias="classicslider1">
+                    <div id="rev_slider" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+                        <ul>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-1" data-transition="parallaxvertical" data-slotamount="7"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1200"   data-rotate="0"  data-saveperformance="off"  data-title="We Design">
+
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/images/homepages/index8/slide1.png"  alt="Slider bg 1"  data-bgposition="center center" data-duration="11000" data-bgparallax="10" data-ease="Linear.easeNone" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+
+                                <!-- LAYER NR. 1 - overlay -->
+                                <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" 
+                                    id="slide-1-layer-1" 
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                                    data-width="full"
+                                    data-height="full"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:0.5;"
+                                    data-transform_in="opacity:0;s:1500;" 
+                                    data-transform_out="o:0;s:1000;" 
+                                    data-start="1000" 
+                                    data-basealign="slide" 
+                                    data-responsive_offset="on" 
+                                    data-responsive="off"
+                                    style="z-index: 5; background-color: rgba(0,0,0, 0.3);"> 
+                                </div>
+
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-1-layer-2" 
+                                    data-x="['left','left','left','left']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-140','-120','-120','-100']" 
+                                    data-width="none"
+                                    data-height="none"
+                                    data-color="#fff"
+                                    data-fontsize="['42','36','28','22']"
+                                    data-fontweight="400"
+                                    data-lineheight="['50,'44','36','30']"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="700" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;text-shadow:0 2px 5px rgba(0,0,0, 0.35); font-family:'Dancing Script', cursive;">Vietnam's leading consulting and development firm in
+                                </div>
+
+                                <!-- LAYER NR. 3 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-1-layer-3" 
+                                    data-x="['left','left','left','left']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-56','-54,'-60','-55']"
+                                    data-fontsize="['120','90','70','50']"
+                                    data-fontweight="700"
+                                    data-lineheight="['145','110','90','70']"
+                                    data-width="none"
+                                    data-color="#fff"
+                                    data-height="none"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="x:[-105%];z:0;rX:0deg;rY:0deg;sX:1;sY:1;skX:0;skY:0;s:500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1000" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    data-elementdelay="0.1" 
+                                    style="z-index: 5; white-space: nowrap;text-shadow:0 3px 8px rgba(0,0,0, 0.35);">Blockchains 
+                                </div>
+
+                                <!-- LAYER NR. 4 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-1-layer-4" 
+                                    data-x="['left','left','left','left']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['55','45','25','15']" 
+                                    data-width="['640px', '540px', '480px', '320px']"
+                                    data-height="none"
+                                    data-whitespace="normal"
+                                    data-color="#fff"
+                                    data-fontsize="['18','16','15','14']"
+                                    data-fontweight="400"
+                                    data-lineheight="['26','24','22','20']"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1300" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;text-shadow:0 2px 3px rgba(0,0,0, 0.35);">
+                                    SmartChain Labs brings the world-class services and knowledge in blockchains and smart contracts to Vietnam.
+                                </div>
+
+                                <!-- LAYER NR. 5 -->
+                                <!-- <a class="tp-caption btn btn-custom2 min-width tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-1-layer-5" 
+                                    data-x="['left','left','left','left']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['140','136','100','90']" 
+                                    data-witdh="none"
+                                    data-height="none"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1700" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;border-radius:30px"
+                                    href="#">Visit Details
+                                </a> -->
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-2" data-transition="parallaxvertical" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1200" data-rotate="0" data-saveperformance="off" data-title="We Create">
+
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/images/homepages/index8/slide2.jpg"  alt="Slider bg 2"  data-bgposition="center center" data-duration="11000" data-bgparallax="10" data-ease="Linear.easeNone" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+
+                                <!-- LAYER NR. 1 - overlay -->
+                                <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" 
+                                    id="slide-2-layer-1" 
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                                    data-width="full"
+                                    data-height="full"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:0.5;"
+                                    data-transform_in="opacity:0;s:1500;" 
+                                    data-transform_out="o:0;s:1000;" 
+                                    data-start="1000" 
+                                    data-basealign="slide" 
+                                    data-responsive_offset="on" 
+                                    data-responsive="off"
+                                    style="z-index: 5; background-color: rgba(0,0,0, 0.3);"> 
+                                </div>
+
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-2-layer-2" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30,'15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-140','-120','-120','-100']" 
+                                    data-width="none"
+                                    data-height="none"
+                                    data-color="#fff"
+                                    data-fontsize="['42','36','28','22']"
+                                    data-fontweight="100"
+                                    data-lineheight="['50,'44','36','30']"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="700" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;text-shadow:0 2px 5px rgba(0,0,0, 0.35);font-family:'Dancing Script', cursive;">Learn Blockchain technology with our
+                                </div>
+
+                                <!-- LAYER NR. 3 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-2-layer-3" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-56','-54,'-60','-55']"
+                                    data-fontsize="['120','90','70','50']"
+                                    data-fontweight="700"
+                                    data-lineheight="['145','110','90','70']"
+                                    data-width="none"
+                                    data-color="#fff"
+                                    data-height="none"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="x:[105%];z:0;rX:0deg;rY:0deg;sX:1;sY:1;skX:0;skY:0;s:500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[-100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1000" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    data-elementdelay="0.1" 
+                                    style="z-index: 5; white-space: nowrap;text-shadow:0 3px 8px rgba(0,0,0, 0.35);">Training
+                                </div>
+
+                                <!-- LAYER NR. 4 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0 text-right" 
+                                    id="slide-2-layer-4" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['55','45','25','15']" 
+                                    data-width="['640px', '540px', '480px', '320px']"
+                                    data-height="none"
+                                    data-whitespace="normal"
+                                    data-color="#fff"
+                                    data-fontsize="['18','16','15','14']"
+                                    data-fontweight="400"
+                                    data-lineheight="['26','24','22','20']"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1300" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;text-shadow:0 2px 3px rgba(0,0,0, 0.35);">
+                                    Our team consists of the best experts in blockchain industry who have been leading and contributing to real world blockchain projects.
+                                </div>
+
+                                <!-- LAYER NR. 5 -->
+                                <!-- <a class="tp-caption btn btn-custom2 min-width tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-2-layer-5" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['140','136','100','90']" 
+                                    data-witdh="none"
+                                    data-height="none"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1700" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;border-radius:30px"
+                                    href="#">Visit Details
+                                </a> -->
+                            </li>
+                            <!-- SLIDE  -->
+                            <li data-index="rs-3" data-transition="parallaxvertical" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="1200" data-rotate="0" data-saveperformance="off" data-title="We Create">
+
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/images/homepages/index2/slide3.jpg"  alt="Slider bg 2"  data-bgposition="center center" data-duration="11000" data-bgparallax="10" data-ease="Linear.easeNone" class="rev-slidebg" data-no-retina>
+                                <!-- LAYERS -->
+
+                                <!-- LAYER NR. 1 - overlay -->
+                                <div class="tp-caption tp-shape tp-shapewrapper rs-parallaxlevel-0" 
+                                    id="slide-2-layer-1" 
+                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+                                    data-width="full"
+                                    data-height="full"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:0.5;"
+                                    data-transform_in="opacity:0;s:1500;" 
+                                    data-transform_out="o:0;s:1000;" 
+                                    data-start="1000" 
+                                    data-basealign="slide" 
+                                    data-responsive_offset="on" 
+                                    data-responsive="off"
+                                    style="z-index: 5; background-color: rgba(0,0,0, 0.3);"> 
+                                </div>
+
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-2-layer-2" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30,'15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-140','-120','-120','-100']" 
+                                    data-width="none"
+                                    data-height="none"
+                                    data-color="#fff"
+                                    data-fontsize="['42','36','28','22']"
+                                    data-fontweight="100"
+                                    data-lineheight="['50,'44','36','30']"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="700" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;text-shadow:0 2px 5px rgba(0,0,0, 0.35);font-family:'Dancing Script', cursive;">Secure your blockchain system with our
+                                </div>
+
+                                <!-- LAYER NR. 3 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0" 
+                                    id="slide-2-layer-3" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['-56','-54,'-60','-55']"
+                                    data-fontsize="['120','90','70','50']"
+                                    data-fontweight="700"
+                                    data-lineheight="['145','110','90','70']"
+                                    data-width="none"
+                                    data-color="#fff"
+                                    data-height="none"
+                                    data-whitespace="nowrap"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="x:[105%];z:0;rX:0deg;rY:0deg;sX:1;sY:1;skX:0;skY:0;s:500;e:Power4.easeInOut;"
+                                    data-transform_out="y:[-100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1000" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    data-elementdelay="0.1" 
+                                    style="z-index: 5; white-space: nowrap;text-shadow:0 3px 8px rgba(0,0,0, 0.35);">Security Audit
+                                </div>
+
+                                <!-- LAYER NR. 4 -->
+                                <div class="tp-caption tp-resizeme rs-parallaxlevel-0 text-right" 
+                                    id="slide-2-layer-4" 
+                                    data-x="['right','right','right','right']" data-hoffset="['30','15','15','15']" 
+                                    data-y="['middle','middle','middle','middle']" data-voffset="['55','45','25','15']" 
+                                    data-width="['640px', '540px', '480px', '320px']"
+                                    data-height="none"
+                                    data-whitespace="normal"
+                                    data-color="#fff"
+                                    data-fontsize="['18','16','15','14']"
+                                    data-fontweight="400"
+                                    data-lineheight="['26','24','22','20']"
+                                    data-transform_idle="o:1;"
+                                    data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:500;e:Power4.easeInOut;" 
+                                    data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+                                    data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" 
+                                    data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" 
+                                    data-start="1300" 
+                                    data-splitin="none" 
+                                    data-splitout="none" 
+                                    data-responsive_offset="on" 
+                                    style="z-index: 6; white-space: nowrap;text-shadow:0 2px 3px rgba(0,0,0, 0.35);">
+                                    Our team has found and reported real exploits in blockchain protocol and smart contracts.
+                                </div>
+                                
+                            </li>
+                        </ul>
+                        <div class="tp-bannertimer tp-bottom" style="height: 4px; background-color: rgba(255, 255, 255, 0.5);"></div>
+                    </div><!-- End #rev_slider -->
+                </div><!-- END REVOLUTION SLIDER -->
+
+                <div class="container-fluid">
+                    <header id="services" class="title-block">
+                      <h2 class="title dark text-center">Our <span class="light text-custom2">Services</span></h2>
+                    </header>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service service-box" style="min-height: 258px;">
+                                <div class="service-icon custom2">
+                                    <i class="fa fa-support"></i>
+                                </div><!-- End .service-icon -->
+                                <h3 id="consulting" class="service-title"><a href="#consuling">Consulting</a></h3>
+                                <p>We provide top consulting services with our world-class blockchain gurus.</p>
+                            </div><!-- End .service -->
+                        </div><!-- End .col-md-3 -->
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service service-box" style="min-height: 258px;">
+                                <div class="service-icon custom2">
+                                    <i class="fa fa-database"></i>
+                                </div><!-- End .service-icon -->
+                                <h3 id="development" class="service-title"><a href="#development">Development</a></h3>
+                                <p>We develop exciting products for our customers and ourselves.</p>
+                            </div><!-- End .service -->
+                        </div><!-- End .col-md-3 -->
+
+                        <div class="clearfix visible-sm"></div><!-- End .clearfix -->
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service service-box" style="min-height: 258px;">
+                                <div class="service-icon custom2">
+                                    <i class="fa fa-check"></i>
+                                </div><!-- End .service-icon -->
+                                <h3 id="auditing" class="service-title"><a href="#auditing">Security Auditing</a></h3>
+                                <p>Our team has world-famous security researchers. Let us help you secure your systems.</p>
+                            </div><!-- End .service -->
+                        </div><!-- End .col-md-3 -->
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service service-box" style="min-height: 258px;">
+                                <div class="service-icon custom2">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </div><!-- End .service-icon -->
+                                <h3 id="training" class="service-title"><a href="#training">Training</a></h3>
+                                <p>Our gurus bring you all up-to-date knowledge in blockchains and smart contracts. </p>
+                            </div><!-- End .service -->
+                        </div><!-- End .col-md-3 -->
+                    </div><!-- End .row -->
+                </div><!-- End .container-fluid -->
+
+                <div class="mb45 mb35-sm mb25-xs"></div><!-- margin -->
+                
+                <div id="projects" class="container-fluid text-center">
+                    <header class="title-block">
+                      <h2 class="title dark text-center">Featured <span class="light text-custom2">Projects</span></h2>
+                      <p>Our products speak for our services and capabilities</p>
+                    </header>
+                    <!--
+                    <ul id="portfolio-filter">
+                        <li class="active"><a href="#" data-filter="*">All</a></li>
+                        <li><a href="#" data-filter=".web-design">Web Design</a></li>
+                        <li><a href="#" data-filter=".marketing">Marketing</a></li>
+                        <li><a href="#" data-filter=".video">Video</a></li>
+                        <li><a href="#" data-filter=".wordpress">Wordpress</a></li>
+                        <li><a href="#" data-filter=".logo-design">Logo Design</a></li>
+                    </ul>
+                    -->
+                </div>
+
+                 <div class="container-fluid">
+                    <div class="portfolio-row">
+                        <div id="portfolio-item-container" class="popup-gallery max-col-4" data-layoutmode="fitRows">
+                            <div class="portfolio-item web-design wordpress">
+                                <figure>
+                                    <img src="assets/images/portfolio/grid/smartpool.png" alt="SmartPool">
+                                    <figcaption>
+                                        <a href="assets/images/portfolio/grid/smartpool.png" data-thumb="assets/images/portfolio/grid/smartpool.png" class="zoom-btn"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-meta">
+
+                                    <h3 class="portfolio-title"><a href="http://smartpool.io" title="Portfolio name">SmartPool</a></h3>
+                                    <div class="portfolio-tags">
+                                      Efficient Decentralized Mining Pools for Existing Cryptocurrencies Based on Ethereum Smart Contracts
+                                    </div><!-- End .portfolio-tags -->
+                                </div><!-- End .portfolio-meta -->
+                            </div><!-- End .portfolio-item -->
+
+                            <div class="portfolio-item web-design marketing">
+                                <figure>
+                                    <img src="assets/images/portfolio/grid/oyente.png" alt="Oyente">
+                                     <figcaption>
+                                        <a href="assets/images/portfolio/grid/oyente.png" data-thumb="assets/images/portfolio/grid/oyente.png" class="zoom-btn"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a href="https://github.com/ethereum/oyente" title="Portfolio name">Oyente</a></h3>
+                                    <div class="portfolio-tags">
+                                      An Analysis Tool for Smart Contracts
+                                    </div><!-- End .portfolio-tags -->
+                                </div><!-- End .portfolio-meta -->
+                            </div><!-- End .portfolio-item -->
+
+                            <div class="portfolio-item wordpress">
+                                <figure>
+                                    <img src="assets/images/portfolio/grid/datacons.jpg" alt="Datacons">
+                                    <figcaption>
+                                        <a href="assets/images/portfolio/grid/datacons.jpg" data-thumb="assets/images/portfolio/grid/datacons.jpg" class="zoom-btn"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a href="#" title="Portfolio name">Datacons: Data Consortium</a></h3>
+                                    <div class="portfolio-tags">
+                                      Data Consortitum using blockchain
+                                    </div><!-- End .portfolio-tags -->
+                                </div><!-- End .portfolio-meta -->
+                            </div><!-- End .portfolio-item -->
+
+                            <div class="portfolio-item web-design wordpress">
+                                <figure>
+                                    <img src="assets/images/portfolio/grid/supply_chain.png" alt="Portfolio Name">
+                                    <figcaption>
+                                        <a href="assets/images/portfolio/grid/supply_chain.png" data-thumb="assets/images/portfolio/grid/supply_chain.png" class="zoom-btn"><i class="fa fa-search"></i></a>
+                                    </figcaption>
+                                </figure>
+                                <div class="portfolio-meta">
+                                    <h3 class="portfolio-title"><a href="#" title="Portfolio name">Supply Chain</a></h3>
+                                    <div class="portfolio-tags">
+                                      Building supply chain for algriculture products using blockchain
+                                    </div><!-- End .portfolio-tags -->
+                                </div><!-- End .portfolio-meta -->
+                            </div><!-- End .portfolio-item -->
+                        </div><!-- End .portfolio-item-container -->
+                    </div><!-- End .row -->
+                </div><!-- End .container-fluid -->
+
+                <div class="mb60 mb50-sm"></div><!-- margin -->
+
+                <div id="team" class="container-fluid">
+                    <header class="title-block">
+                      <h2 class="title dark text-center">Meet our <span class="light text-custom2">Team</span></h2>
+                    </header>
+                    <div class="swiper-container team-carousel-fullnav">
+                        <div class="swiper-buttons-container">
+                            <div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div><!-- End .swiper-button-prev -->
+                            <div class="swiper-button-next"><i class="fa fa-angle-right"></i></div><!-- End .swiper-button-next -->
+                        </div><!-- End .swiper-buttons-container -->
+
+                        <div class="swiper-wrapper">                            
+                            <div class="swiper-slide">
+                                <div class="member text-center">
+                                    <div class="member-top">
+                                        <figure>
+                                            <img src="assets/images/team/loiluu_bw.png" alt="Loi Luu The">
+                                        </figure>
+                                        <div class="social-icons">
+                                                         
+                                            <a href="https://www.comp.nus.edu.sg/~loiluu/" class="social-icon" title="Website"><i class="fa fa-home"></i></a>
+                                            <a href="https://twitter.com/loi_luu" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://github.com/loiluu" class="social-icon" title="Github"><i class="fa fa-github"></i></a>               
+                                            <a href="https://www.linkedin.com/in/loiluu/" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a>                                            
+                                        </div><!-- End .social-icons -->
+                                    </div><!-- End .member-top -->
+                                    <h3 class="member-title"><a href="#">Loi Luu</a> <small>(Founder, CEO)</small></h3>
+                                    <p>Loi Luu is a PhD candidate at the National University of Singapore. His research is on cryptocurrencies, smart contract security and distributed consensus algorithms. Loi is a regular invited speaker at Bitcoin and Ethereum workshops such as DevCon2, EdCon.io, Scaling Bitcoin. </br>
+Loi has developed Oyente, the first open-source security analyzer for Ethereum smart contracts. He also co-founded the SmartPool project which decentralizes mining pools in existing cryptocurrency.
+</p>                                    
+                                </div><!-- End .member -->
+                            </div><!-- End .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="member text-center">
+                                    <div class="member-top">
+                                        <figure>
+                                            <img src="assets/images/team/victor.png" alt="Vu Tran Huy">
+                                        </figure>
+                                        <div class="social-icons">                                            
+                                            <a href="https://twitter.com/vutran54" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                            <a href="https://github.com/tranvictor" class="social-icon" title="Github"><i class="fa fa-github"></i></a>                                            
+                                        </div><!-- End .social-icons -->
+                                    </div><!-- End .member-top -->
+                                    <h3 class="member-title"><a href="#">Victor Tran</a> <small>(Cofounder, CTO)</small></h3>
+                                    <p>
+Victor co-founded and was CTO of several startups in social marketing. He built and maintained platforms which handled millions of monthly active users. One of his platform was in Alexa top 20 in the US for several months. Victor has been interested in blockchain and cryptocurrency developoment since early 2016 and is a lead engineer at the SmartPool project.</p>
+                                </div><!-- End .member -->
+                            </div><!-- End .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="member text-center">
+                                    <div class="member-top">
+                                        <figure>
+                                            <img src="assets/images/team/nga.png" alt="Thanh Nga Luu">
+                                        </figure>
+                                        <div class="social-icons">                                            
+                                            <a href="https://www.linkedin.com/in/nga-luu-thanh-83996136/" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a>                                            
+                                        </div><!-- End .social-icons -->
+                                    </div><!-- End .member-top -->
+                                    <h3 class="member-title"><a href="#">Thanh-Nga Luu</a> <small>(Head of Legal)</small></h3>
+                                    <p>Nga has rich experience in Intellectual Property law after several years of working for a famous law consulting firm in Vietnam. She is deeply interested in smart contracts and can bring her expertise in traditional  contracts to help clients and partners develop new strategic models of governance and compliance.</p>
+                                </div><!-- End .member -->
+                            </div><!-- End .swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="member text-center">
+                                    <div class="member-top">
+                                        <figure>
+                                            <img src="assets/images/team/tran_huu_duc.jpg" alt="Duc Tran Huu">
+                                        </figure>
+                                        <div class="social-icons">                                            
+                                            <a href="https://www.linkedin.com/in/tranhuuduc/" class="social-icon" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+                                            
+                                        </div><!-- End .social-icons -->
+                                    </div><!-- End .member-top -->
+                                    <h3 class="member-title"><a href="#">Duc Tran Huu</a> <small>(CEO of FPT Venture, Advisor)</small></h3>
+                                    <p>Duc was famous for being the youngest director of FPT Software in 2001. From 2010 to 2012, he was the CTO of FPT Mobile Application (FMA). Since 2013, he is the CTO of FPT Trading, a member of FPT Technical board and CEO of FPT Venture.</p>
+                                </div><!-- End .member -->
+                            </div><!-- End .swiper-slide -->
+                            
+
+                            <div class="swiper-slide">
+                                <div class="member text-center">
+                                    <div class="member-top">
+                                        <figure>
+                                            <img src="assets/images/team/prateek.png" alt="Prateek Saxena">
+                                        </figure>
+                                        <div class="social-icons">
+                                            <a href="https://www.comp.nus.edu.sg/~prateeks/" class="social-icon" title="Website"><i class="fa fa-home"></i></a>
+                                            
+                                        </div><!-- End .social-icons -->
+                                    </div><!-- End .member-top -->
+                                    <h3 class="member-title"><a href="#">Prateek Saxena</a> <small>(Advisor)</small></h3>
+                                    <p>Prateek Saxena is a research professor in computer science at National University of Singapore. He works on blockchains and computer security, and his research has influenced the design of browser platforms, web standards and app stores widely used today. He has received several premier awards such as the MIT TR35 Asia.</p>
+                                </div><!-- End .member -->
+                            </div><!-- End .swiper-slide -->
+                        </div><!-- End .swiper-wrapper -->
+
+                        <div class="swiper-pagination"></div><!-- End .swiper-pagination -->
+                </div><!-- End .about-section-edge -->
+
+                <div class="mb65 mb60-sm"></div><!-- margin -->
+
+                <div class="bg-white pt60 pb65 pt50-sm pb55-sm">
+                    <div id="partners" class="container-fluid">
+                        <header class="title-block text-center">
+                          <h2 class="title dark text-center">We have <span class="light text-custom2">worked with</span></h2>
+                        </header>
+
+                        <div class="swiper-container clients-carousel-fullnav">
+                            <!--
+                            <div class="swiper-buttons-container">
+                                <div class="swiper-button-prev hidden-xs"><i class="fa fa-angle-left"></i></div>
+                                <div class="swiper-button-next hidden-xs"><i class="fa fa-angle-right"></i></div>
+                            </div>
+                            -->
+
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="client" title="Ethereum Foundation">
+                                        <img src="assets/images/clients/ethereum.png" alt="Ethereum Foundation logo">
+                                    </a>
+                                </div><!-- End .swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <a href="#" class="client" title="Dinar Dirham">
+                                        <img src="assets/images/clients/dinardirham.jpg" alt="dinar dirham logo">
+                                    </a>
+                                </div><!-- End .swiper-slide -->
+
+                                <div class="swiper-slide">
+                                    <a href="#" class="client" title="Melonport">
+                                        <img src="assets/images/clients/melonport.png" alt="Melonport logo">
+                                    </a>
+                                </div><!-- End .swiper-slide -->
+
+                                <div class="swiper-slide">
+                                  <a href="#" class="client" title="FPT Venture">
+                                      <img src="assets/images/clients/fpt_venture.png" alt="FPT Venture logo">
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="#" class="client" title="Anquan Capital">
+                                      <img src="assets/images/clients/anquan.png" alt="Anquan Capital logo">
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="#" class="client" title="You can be on of them too">
+                                      <img src="assets/images/clients/next_client.png" alt="You can be on of them too">
+                                  </a>
+                                </div>
+                                  <!-- End .swiper-slide -->
+                            </div><!-- End .swiper-wrapper -->
+                        </div><!-- End .clients-carousel -->
+                    </div><!-- End .container-fluid -->
+                </div><!-- End .bg-white -->
+            </div><!-- End .main -->
+
+            <footer class="footer">                
+                        
+
+                <div class="footer-bottom transparent">
+                    <div class="container-fluid">
+                        <div class="footer-left">
+                            <h4 style="color: #673AB7;">SmartChain Labs LLC.</h4>
+                            <p>We provide high quality blockchain solutions and consulting services </p>
+                            <p>No. 2, Lane 140, Khuat Duy Tien st., Nhan Chinh, </br>
+                            Thanh Xuan dist., Hanoi, Vietnam</p>                            
+                        </div>
+
+                        <!-- <div class="footer-mid">
+                            <div class="social-icons circle">
+                                <label>Find Us:</label>
+                                <a href="#" class="social-icon" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="social-icon" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="social-icon" title="Github"><i class="fa fa-github"></i></a>
+                            </div>
+                        </div>                         -->
+
+                        <div class="footer-right">
+                            <p class="copyright"><strong>SmartChain Labs</strong> - All rights reserved - 2017 &copy; Made by <a href="http://eonythemes.com" target="_blank" title="eonythemes">eonythemes</a>.</p>
+                        </div><!-- End .footer-right -->
+                    </div><!-- End .container-fluid -->
+                </div><!-- End .footer-bottom -->
+            </footer><!-- End .footer -->
+        </div><!-- End #wrapper -->
+        <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
+
         <!-- End -->
         <script src="assets/js/plugins.min.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/jquery.plugin.min.js"></script>
-        <script src="assets/js/jquery.countdown.min.js"></script>
-        <script src="assets/js/jquery.validate.min.js"></script>
-        <script src="assets/js/contact.js"></script>
 
-        <script>
-            $(function() {
+        <!-- REVOLUTION JS FILES -->
+        <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+
+        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+        (Load Extensions only on Local File Systems !  
+        The following part can be removed on Server for On Demand Loading) -->  
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="assets/js/extensions/revolution.extension.video.min.js"></script>
+
+        <script type="text/javascript">
+            (function() {
                 "use strict";
+             
+                $(document).ready(function() {
+                    var revapi;
+                    if($("#rev_slider").revolution == undefined){
+                        revslider_showDoubleJqueryError("#rev_slider");
+                    }else{
+                        revapi = $("#rev_slider").show().revolution({
+                            sliderType:"standard",
+                            jsFileLocation:"assets/js/",
+                            sliderLayout:"auto",
+                            dottedOverlay:"none",
+                            delay:10000,
+                            navigation: {
+                                keyboardNavigation: "on",
+                                keyboard_direction: "horizontal",
+                                mouseScrollNavigation: "off",
+                                onHoverStop: "off",
+                                touch: {
+                                    touchenabled: "on",
+                                    swipe_threshold: 75,
+                                    swipe_min_touches: 1,
+                                    swipe_direction: "horizontal",
+                                    drag_block_vertical: false
+                                },
+                                bullets: {
+                                    enable: true,
+                                    hide_onmobile: false,
+                                    style: "hebe",
+                                    hide_under: 480,
+                                    hide_onleave: false,
+                                    direction: "horizontal",
+                                    h_align: "center",
+                                    v_align: "bottom",
+                                    h_offset: 0,
+                                    v_offset: 20,
+                                    space: 5,
+                                    tmp: '<span class="tp-bullet-image"></span>'
+                                }
+                            },
+                            viewPort: {
+                                enable:true,
+                                outof:"pause",
+                                visible_area:"80%"
+                            },
+                            parallax: {
+                                type:"mouse",
+                                origo:"slidercenter",
+                                speed:2000,
+                                levels:[2,3,4,5,6,7,12,16,10,50],
+                            },
+                            responsiveLevels:[1500,992,768,480],
+                            gridwidth:[1470,970,750,480],
+                            gridheight:[600,540,480,360],
+                            autoHeight:"off",
+                            lazyType:"single",
+                            shadow:0,
+                            spinner:"off",
+                            stopLoop:"off",
+                            stopAfterLoops:-1,
+                            stopAtSlide:-1,
+                            shuffle:"off",
+                            hideThumbsOnMobile:"off",
+                            hideSliderAtLimit:0,
+                            hideCaptionAtLimit:0,
+                            hideAllCaptionAtLilmit:0,
+                            debugMode:false
+                        });
 
-                // Countdown
-                if ($.fn.countdown) {
-                    $('.soon-countdown').countdown({
-                        until: new Date(2017, 2, 14), // 7th month = August / Months 0 - 11 (January  - December)
-                        format: 'DHMS',
-                        padZeroes: true
-                    });
-                }
-            });
+                    }
+                });
+
+            })();
         </script>
+    
     </body>
 </html>
